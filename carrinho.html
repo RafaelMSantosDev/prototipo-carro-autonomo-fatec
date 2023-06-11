@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+    <header>
+        <nav id="navbarContainer">
+            <div id="userpageIcon">
+                <a href="usuario.html">
+                    <div id="userIcon">
+                        <img src="img/userIcon.jpg" alt="">
+                        <p>Página de Usuário</p>
+                    </div>
+                </a>
+                <a href="carrinho.html">
+                    <div class="userOption">
+                        <img src="img/cart-icon-20.jpg" alt="">
+                        <p>Carrinho de Compras</p>
+                    </div>
+                </a>
+                <a href="loja.html">
+                    <div class="userOption">
+                        <img src="img/shop-icon.jpg" alt="">
+                        <p>Loja</p>
+                    </div>
+                </a>
+                <a href="carro.html">   
+                    <div class="userOption">
+                        <img src="img/carbot-icon.png" alt="">
+                        <p>Carro Autônomo</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="userOption">
+                        <img src="img/configIcon.png" alt="">
+                        <p>Preferências*</p>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="userOption">
+                        <img src="img/logout-icon.jpg" alt="">
+                        <span>Sair</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <section>
+        <h1>Carrinho de Compras</h1>
+        <div id="idOpcaoExtra">
+            <button class="btnExtra">Agendamento e Entregas</button>
+            <button class="btnExtra">Lista de desejos</button>
+        </div>
+
+        <table>
+            <tr id="idTituloTabela">
+              <th><p>Item</p></th>
+              <th><p>Quantidade</p></th>
+              <th><p>Preço</p></th>
+              <th><p>Remover</p></th>
+            </tr>
+            <tr>
+              <td><span class="classItem">Salgadinho</span></td>
+              <td><span>x2</span></td>
+              <td><span class="classPreco">R$ 9,00</span></td>
+              <th class="removeItem"><span>x</span></th>
+            </tr>
+            <tr>
+                <td><span class="classItem">Refrigerante 600mL</span></td>
+                <td><span>x1</span></td>
+                <td><span class="classPreco">R$ 6,50</span></td>
+                <th class="removeItem"><span>x</span></th>
+            </tr>
+            <tr>
+                <td><span class="classItem">Termocirculador</span></td>
+                <td><span>x1</span></td>
+                <td><span class="classPreco">R$ 1300,00</span></td>
+                <th class="removeItem"><span>x</span></th>
+            </tr>
+            <tr>
+                <td><p class="classTotal">Total</p></td>
+                <td><span class="classTotal">4 itens</span></td>
+                <td><span class="classTotal">R$ 1315,50</span></td>
+                <th class="removeItem"><span>x</span></th>
+            </tr>
+          </table>
+        <div id="idPagamento">
+            <button>Finalizar compra</button>
+            <button>Acompanhamento e Código de retirada</button>
+        </div>
+    </section>
+
+    <footer>
+        <h1>Powered by</h1>
+        <div class="devToolsDiv">
+            <img src="img/spring-boot-project-logo.png" alt="">
+            <img src="img/React-icon.svg.png" alt="">
+            <img src="img/mongodb.svg" alt="">
+        </div>
+    </footer>
+
+</body>
+</html>

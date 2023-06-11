@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Exo+2:ital,wght@0,300;0,400;1,700&family=Kanit:wght@300;400;700&family=Overpass:wght@300&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-size: 18px;
+    
+    padding: unset;
+    margin: unset;
+}
+:root{
+    --bg-color: rgb(50, 50, 50);
+    --navbar-bg-color: rgb(35 35, 35);
+
+    --primary-text-color: whitesmoke;
+    --secondary-text-color: rgb(0, 255, 50);
+    --important-text-color: rgb(250, 0, 50);
+
+    --container-color: rgb(150, 50, 250);
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+    font-family: 'Overpass', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    height: 100vh;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+
+    margin: 25px;
+
+    width: 600px;
+    height: 500px;
+}
+
+#idGrupo{
+    width: 50%;
+
+    color: whitesmoke;
+    font-family: "Bruno Ace";
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(180deg,royalblue, slateblue);
+
+    padding: 2rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#idGrupo img{
+    height: 80%;
+}
+
+#idLogin{
+    width:50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--navbar-bg-color);
+
+    padding: 2rem;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#idLogin span{
+    margin: 15px;
+    text-decoration: underline;
+    color: slateblue;
+}
+
+#idLogin span:hover{
+    cursor: pointer;
+}
+
+
+input{
+    border: unset;
+    border: 2px solid slateblue;
+    border-radius: 5px;
+    background-color:rgb(35 35, 35);
+    color:slateblue;
+
+    text-decoration: none;
+
+    padding: 10px;
+    margin: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: radial-gradient(royalblue, slateblue);
+    color: whitesmoke;
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+    height: 50px;
+    width: 200px;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.9;
+}
+
+/***********************        RODAPÉ DA PAGINA         *****************************/
+
+footer{
+    font-family: 'Exo 2', sans-serif;
+    background-image: linear-gradient(90deg, blue, rgb(0, 80, 255));
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    padding: 0.5rem;
+}
+
+/********************        SCROLL DA PAGINA           **********************/
+
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+    background:var(--navbar-bg-color);
+}
+body::-webkit-scrollbar-thumb{
+    background: springgreen;
+    border-radius: 4px;
+}
